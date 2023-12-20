@@ -64,7 +64,7 @@ Una vez instalado, ejecutaremos el siguiente comando para verificar el servicio 
 `sudo systemctl status postgresql`
 
 <p align="center">
-  <img src=""/>
+  <img src="https://github.com/AntonioPC94/PPS-23-24/blob/467850e1b42b51cb78d3e14b8eb47c97e91d52b0/Pr%C3%A1cticas/img/img04.png"/>
 </p>
 
 Ahora lo que vamos a hacer, es crear una nueva base de datos y un nuevo usuario para Sonarqube a través del intérprete de comandos PostgreSQL.
@@ -76,13 +76,13 @@ Para iniciar sesión en el shell de PostgreSQL, utilizaremos el siguiente comand
 Ahora ejecutaremos las siguientes consultas para crear una nueva base de datos y un nuevo usuario para Sonarqube:
 
 <p align="center">
-  <img src=""/>
+  <img src="https://github.com/AntonioPC94/PPS-23-24/blob/467850e1b42b51cb78d3e14b8eb47c97e91d52b0/Pr%C3%A1cticas/img/img05.png"/>
 </p>
 
 Una vez creada la base de datos y el usuario para Sonarqube, comprobaremos que estos han sido creados ejecutando las siguientes consultas:
 
 <p align="center">
-  <img src=""/>
+  <img src="https://github.com/AntonioPC94/PPS-23-24/blob/467850e1b42b51cb78d3e14b8eb47c97e91d52b0/Pr%C3%A1cticas/img/img06.png"/>
 </p>
 
 Por último, saldremos de PostgreSQL con la consulta "\q".
@@ -103,7 +103,7 @@ Ahora abriremos el fichero "/etc/sysctl.conf" con el editor para añadirle las s
 `fs.file-max=131072`
 
 <p align="center">
-  <img src=""/>
+  <img src="https://github.com/AntonioPC94/PPS-23-24/blob/467850e1b42b51cb78d3e14b8eb47c97e91d52b0/Pr%C3%A1cticas/img/img07.png"/>
 </p>
 
 Sonarqube requiere que el parámetro del kernel vm.max_map_count sea mayor que "524288" y que fx.file-max sea mayor que "131072".
@@ -113,7 +113,7 @@ Para aplicar los cambios realizados en el fichero "sysctl.conf", utilizaremos el
 `sudo sysctl --system`
 
 <p align="center">
-  <img src=""/>
+  <img src="https://github.com/AntonioPC94/PPS-23-24/blob/467850e1b42b51cb78d3e14b8eb47c97e91d52b0/Pr%C3%A1cticas/img/img08.png"/>
 </p>
 
 Ahora vamos a modificar el "ulimit" del sistema, los cambios que hagamos sobre este fichero, se revertirán una vez reiniciemos la máquina. Entonces, para que la configuración sea permanente, vamos a crear un archivo de configuración en "/etc/security/limits.d/" llamado "99-sonarqube.conf" utilizando el siguiente comando:
@@ -123,7 +123,7 @@ Ahora vamos a modificar el "ulimit" del sistema, los cambios que hagamos sobre e
 Añadiremos la siguiente configuración al archivo y lo cerraremos:
 
 <p align="center">
-  <img src=""/>
+  <img src="https://github.com/AntonioPC94/PPS-23-24/blob/467850e1b42b51cb78d3e14b8eb47c97e91d52b0/Pr%C3%A1cticas/img/img09.png"/>
 </p>
 
 Una vez completada la configuración, descargaremos el paquete de Sonarqube y configuraremos su instalación.
@@ -145,7 +145,7 @@ Ahora, descargaremos el paquete Sonarqube mediante el siguiente comando:
 Una vez descargado, veremos en nuestro directorio de trabajo, un archivo zip "sonarqube-10.3.0.82913.zip" en el cual se almacena el paquete Sonarqube.
 
 <p align="center">
-  <img src=""/>
+  <img src="https://github.com/AntonioPC94/PPS-23-24/blob/467850e1b42b51cb78d3e14b8eb47c97e91d52b0/Pr%C3%A1cticas/img/img10.png"/>
 </p>
 
 Lo que vamos a hacer a continuación, es extraer el contenido de dicho archivo y lo vamos a mover al directorio "/opt/sonarqube".
