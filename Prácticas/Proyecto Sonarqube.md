@@ -10,22 +10,20 @@ Trabajo realizado por: Antonio Peñalver Caro
 
 # Instalar Java OpenJDK
 
-Lo primero que haremos, será instalar OpenJDK v11, ya que SonarQube lo requiere. Pero antes que nada, actualizaremos los repositorios de la máquina con el siguiente comando:
+Lo primero que haremos, será instalar OpenJDK v17, ya que SonarQube lo requiere. Pero antes que nada, actualizaremos los repositorios de la máquina con el siguiente comando:
 
 `sudo apt update`
 
-A continuación, instalaremos Java OpenJDK v11 mediante el siguiente comando:
+A continuación, instalaremos Java OpenJDK v17 mediante el siguiente comando:
 
-`sudo apt install default-jdk`
-
-Nota: Con la opción "default-jdk", nos instalará la versión que queremos.
+`sudo apt install openjdk-17-jdk`
 
 Una vez instalado, comprobaremos la versión de Java utilizando el siguiente comando:
 
 `java -version`
 
 <p align="center">
-  <img src="https://github.com/AntonioPC94/PPS-23-24/blob/81f62576fd4b7e2dfc5c8ce1df802f8430355953/Pr%C3%A1cticas/img/img01.png"/>
+  <img src=""/>
 </p>
 
 # Instalación de PostgreSQL
@@ -161,6 +159,78 @@ Por último, cambiaremos la propiedad del directorio "/opt/sonarqube" al usuario
 `sudo chown -R antoniopc:antoniopc /opt/sonarqube`
 
 # Configurar Sonarqube
+
+Tras haber descargado Sonarqube, configuraremos la instalación de Sonarqube editando el archivo de configuración por defecto "/opt/sonarqube/conf/sonar.properties".
+
+Añadiremos los detalles de la base de datos PostgreSQL, estableceremos la cantidad máxima de memoria para el proceso Elasticsearch y configuraremos el puerto para el servicio Sonarqube mediante el archivo "/opt/sonarqube/conf/sonar.properties". Y por último, configuraremos Sonarqube como un servicio systemd.
+
+Abrimos el archivo de configuración "/opt/sonarqube/conf/sonar.properties" y modificamos lo indicado anteriormente:
+
+<p align="center">
+  <img src=""/>
+</p>
+
+<p align="center">
+  <img src=""/>
+</p>
+
+<p align="center">
+  <img src=""/>
+</p>
+
+Además, el nivel de registro será "INFO" y se almacenará en el directorio "logs" del directorio de instalación de Sonarqube:
+
+<p align="center">
+  <img src=""/>
+</p>
+
+A continuación, configuraremos el archivo de servicio systemd para Sonarqube. Esto nos permitirá controlar fácilmente el proceso de Sonarqube mediante el comando "systemctl".
+
+`sudo nano /etc/systemd/system/sonarqube.service`
+
+Añadimos la siguiente configuración al archivo:
+
+<p align="center">
+  <img src=""/>
+</p>
+
+Una vez hayamos guardado la configuración, recargaremos el gestor systemd utilizando el siguiente comando:
+
+`sudo systemctl daemon-reload`
+
+Después, iniciaremos y habilitaremos el servicio de Sonarqube mediante el siguiente comando:
+
+`sudo systemctl start sonarqube.service`
+`sudo systemctl enable sonarqube.service`
+
+Por último, comprobaremos el estado del servicio de Sonarqube utilizando el siguiente comando:
+
+`sudo systemctl status sonarqube.service`
+
+<p align="center">
+  <img src=""/>
+</p>
+
+Ahora veremos la página de inicio de sesión de Sonarqube. Ingresaremos el nombre de usuario y la contraseña predeterminados, que son "admin/admin" y haremos click en "Iniciar sesión".
+
+<p align="center">
+  <img src=""/>
+</p>
+
+Una vez que hayamos iniciado sesión, Sonarqube nos pedirá que configuremos una nueva contraseña para el usuario administrador. Para ello, escribiremos la contraseña anterior (admin) y luego, escribiremos una nueva contraseña. Una vez hayamos completado todos los apartados, le daremos a "Update".
+
+<p align="center">
+  <img src=""/>
+</p>
+
+Nota: La nueva contraseña que le hemos puesto, es: sonarqubemola.
+
+Con todo esto, ya tendríamos nuestro Sonarqube listo para funcionar.
+
+<p align="center">
+  <img src=""/>
+</p>
+
 
 
 
