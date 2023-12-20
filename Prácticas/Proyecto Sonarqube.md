@@ -23,7 +23,7 @@ Una vez instalado, comprobaremos la versión de Java utilizando el siguiente com
 `java -version`
 
 <p align="center">
-  <img src=""/>
+  <img src="https://github.com/AntonioPC94/PPS-23-24/blob/bd3af6f9f8461fc4711c7b6817fadb64d9f865fa/Pr%C3%A1cticas/img/img01.png"/>
 </p>
 
 # Instalación de PostgreSQL
@@ -167,21 +167,21 @@ Añadiremos los detalles de la base de datos PostgreSQL, estableceremos la canti
 Abrimos el archivo de configuración "/opt/sonarqube/conf/sonar.properties" y modificamos lo indicado anteriormente:
 
 <p align="center">
-  <img src=""/>
+  <img src="https://github.com/AntonioPC94/PPS-23-24/blob/bd3af6f9f8461fc4711c7b6817fadb64d9f865fa/Pr%C3%A1cticas/img/img11.png"/>
 </p>
 
 <p align="center">
-  <img src=""/>
+  <img src="https://github.com/AntonioPC94/PPS-23-24/blob/bd3af6f9f8461fc4711c7b6817fadb64d9f865fa/Pr%C3%A1cticas/img/img12.png"/>
 </p>
 
 <p align="center">
-  <img src=""/>
+  <img src="https://github.com/AntonioPC94/PPS-23-24/blob/bd3af6f9f8461fc4711c7b6817fadb64d9f865fa/Pr%C3%A1cticas/img/img13.png"/>
 </p>
 
 Además, el nivel de registro será "INFO" y se almacenará en el directorio "logs" del directorio de instalación de Sonarqube:
 
 <p align="center">
-  <img src=""/>
+  <img src="https://github.com/AntonioPC94/PPS-23-24/blob/bd3af6f9f8461fc4711c7b6817fadb64d9f865fa/Pr%C3%A1cticas/img/img14.png"/>
 </p>
 
 A continuación, configuraremos el archivo de servicio systemd para Sonarqube. Esto nos permitirá controlar fácilmente el proceso de Sonarqube mediante el comando "systemctl".
@@ -191,7 +191,7 @@ A continuación, configuraremos el archivo de servicio systemd para Sonarqube. E
 Añadimos la siguiente configuración al archivo:
 
 <p align="center">
-  <img src=""/>
+  <img src="https://github.com/AntonioPC94/PPS-23-24/blob/bd3af6f9f8461fc4711c7b6817fadb64d9f865fa/Pr%C3%A1cticas/img/img15.png"/>
 </p>
 
 Una vez hayamos guardado la configuración, recargaremos el gestor systemd utilizando el siguiente comando:
@@ -208,19 +208,23 @@ Por último, comprobaremos el estado del servicio de Sonarqube utilizando el sig
 `sudo systemctl status sonarqube.service`
 
 <p align="center">
-  <img src=""/>
+  <img src="https://github.com/AntonioPC94/PPS-23-24/blob/bd3af6f9f8461fc4711c7b6817fadb64d9f865fa/Pr%C3%A1cticas/img/img16.png"/>
 </p>
 
 Ahora veremos la página de inicio de sesión de Sonarqube. Ingresaremos el nombre de usuario y la contraseña predeterminados, que son "admin/admin" y haremos click en "Iniciar sesión".
 
 <p align="center">
-  <img src=""/>
+  <img src="https://github.com/AntonioPC94/PPS-23-24/blob/bd3af6f9f8461fc4711c7b6817fadb64d9f865fa/Pr%C3%A1cticas/img/img17.png"/>
+</p>
+
+<p align="center">
+  <img src="https://github.com/AntonioPC94/PPS-23-24/blob/bd3af6f9f8461fc4711c7b6817fadb64d9f865fa/Pr%C3%A1cticas/img/img18.png"/>
 </p>
 
 Una vez que hayamos iniciado sesión, Sonarqube nos pedirá que configuremos una nueva contraseña para el usuario administrador. Para ello, escribiremos la contraseña anterior (admin) y luego, escribiremos una nueva contraseña. Una vez hayamos completado todos los apartados, le daremos a "Update".
 
 <p align="center">
-  <img src=""/>
+  <img src="https://github.com/AntonioPC94/PPS-23-24/blob/bd3af6f9f8461fc4711c7b6817fadb64d9f865fa/Pr%C3%A1cticas/img/img19.png"/>
 </p>
 
 Nota: La nueva contraseña que le hemos puesto, es: sonarqubemola.
@@ -228,7 +232,7 @@ Nota: La nueva contraseña que le hemos puesto, es: sonarqubemola.
 Con todo esto, ya tendríamos nuestro Sonarqube listo para funcionar.
 
 <p align="center">
-  <img src=""/>
+  <img src="https://github.com/AntonioPC94/PPS-23-24/blob/bd3af6f9f8461fc4711c7b6817fadb64d9f865fa/Pr%C3%A1cticas/img/img20.png"/>
 </p>
 
 
