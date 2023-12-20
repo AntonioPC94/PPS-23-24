@@ -142,7 +142,7 @@ Ahora, descargaremos el paquete Sonarqube mediante el siguiente comando:
 
 `wget https://binaries.sonarsource.com/Distribution/sonarqube/sonarqube-10.3.0.82913.zip`
 
-Una vez descargado, veremos un archivo zip "sonarqube-10.3.0.82913.zip" donde se almacena el paquete Sonarqube.
+Una vez descargado, veremos en nuestro directorio de trabajo, un archivo zip "sonarqube-10.3.0.82913.zip" en el cual se almacena el paquete Sonarqube.
 
 <p align="center">
   <img src=""/>
@@ -153,6 +153,14 @@ Lo que vamos a hacer a continuación, es extraer el contenido de dicho archivo y
 `unzip sonarqube-10.3.0.82913.zip`
 
 `mv sonarqube-10.3.0.82913 /opt/sonarqube`
+
+Por último, cambiaremos la propiedad del directorio "/opt/sonarqube" al usuario "antoniopc" mediante el comando "chown" como se indica a continuación:
+
+`sudo chown -R antoniopc:antoniopc /opt/sonarqube`
+
+# Configurar Sonarqube
+
+
 
 
 
