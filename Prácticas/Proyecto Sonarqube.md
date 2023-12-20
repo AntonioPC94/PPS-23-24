@@ -58,9 +58,10 @@ Ahora, instalaremos la base de datos PostgreSQL v13 mediante el siguiente comand
 
 `sudo apt install postgresql-13`
 
-Una vez instalado, ejecutaremos el siguiente comando para verificar el servicio y asegurarnos de que se está ejecutando:
+Una vez instalado, ejecutaremos los siguientes comandos para verificar el servicio y asegurarnos de que se está ejecutando:
 
 `sudo systemctl is-enabled postgresql`
+
 `sudo systemctl status postgresql`
 
 <p align="center">
@@ -100,6 +101,7 @@ Para la creación del usuario, utilizaremos el siguiente comando:
 Ahora abriremos el fichero "/etc/sysctl.conf" con el editor para añadirle las siguientes líneas:
 
 `vm.max_map_count=524288`
+
 `fs.file-max=131072`
 
 <p align="center">
