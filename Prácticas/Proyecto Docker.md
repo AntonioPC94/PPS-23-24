@@ -48,10 +48,6 @@ Ahora si nos vamos al navegador de nuestra máquina anfitriona y colocamos la si
   <img src="https://github.com/AntonioPC94/PPS-23-24/blob/4e24cdebbd22317570263fcfd69fe00bce2e1e2b/Pr%C3%A1cticas/img/img28.png"/>
 </p>
 
-Nota: Una vez que el contenedor tenga una dirección IP asignada, tendremos que lanzar el comando anterior de la siguiente manera:
-
-
-
 # Creación y configuración de una red en Docker
 
 Para que las dos máquinas anteriores puedan comunicarse, es conveniente que estén en la misma red. Para ello, vamos a crear una red en Docker y conectaremos ambos contenedores a ella.
@@ -94,5 +90,5 @@ Ahora que conocemos las direcciones IP de ambos contenedores, para ello ejecutar
 
 - Realizamos un "ping" a la máquina DVWA.
 
-- 
+**(CONTINUAR)**
 
