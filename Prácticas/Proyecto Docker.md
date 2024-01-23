@@ -62,9 +62,7 @@ Ahora para comprobar que ambas máquinas se ven, vamos a averiguar qué direcci�
 
 Para ello, realizaremos un "docker inspect" sobre cada uno de los contenedores y redireccionaremos la salida a un fichero de texto para que nos sea más fácil localizar la dirección IP.
 
-## Resultados
-
-### Dirección IP Kali
+## Dirección IP Kali
 
 <p align="left">
   <img src="https://github.com/AntonioPC94/PPS-23-24/blob/a97ff15fa56ecb7bdac4cd034e8e38cfae4dd548/Pr%C3%A1cticas/img/img30.png"/>
@@ -74,7 +72,7 @@ Para ello, realizaremos un "docker inspect" sobre cada uno de los contenedores y
   <img src="https://github.com/AntonioPC94/PPS-23-24/blob/a97ff15fa56ecb7bdac4cd034e8e38cfae4dd548/Pr%C3%A1cticas/img/img31.png"/>
 </p>
 
-### Dirección IP DVWA
+## Dirección IP DVWA
 
 <p align="left">
   <img src="https://github.com/AntonioPC94/PPS-23-24/blob/a97ff15fa56ecb7bdac4cd034e8e38cfae4dd548/Pr%C3%A1cticas/img/img32.png"/>
@@ -83,4 +81,16 @@ Para ello, realizaremos un "docker inspect" sobre cada uno de los contenedores y
 <p align="left">
   <img src="https://github.com/AntonioPC94/PPS-23-24/blob/a97ff15fa56ecb7bdac4cd034e8e38cfae4dd548/Pr%C3%A1cticas/img/img33.png"/>
 </p>
+
+## Ping entre máquinas
+
+Ahora que conocemos las direcciones IP de ambos contenedores, para ello ejecutaremos el comando "ping" desde uno de los contenedores. En nuestro caso, lo vamos a hacer de Kali Linux a DVWA.
+
+- Abrimos una shell interactiva en nuestro contenedor Kali Linux:
+
+<p align="left">
+  <img src="https://github.com/AntonioPC94/PPS-23-24/blob/a97ff15fa56ecb7bdac4cd034e8e38cfae4dd548/Pr%C3%A1cticas/img/img33.png"/>
+</p>
+
+- 
 
