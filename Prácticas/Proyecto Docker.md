@@ -25,7 +25,7 @@ Una vez instalada, accedemos al contenedor utilizando el siguiente comando:
 Ahora que estamos dentro, actualizaremos los repositorios de la máquina e instalaremos las "net-tools".
 
 <p align="center">
-<img src="https://github.com/AntonioPC94/PPS-23-24/blob/1dba84d1d1a13a71a285c53a5137932d9cacd634/Pr%C3%A1cticas/img/img23.png" alt="img28" alt="Descripción imagen 1" width="25%"/> <img src="https://github.com/AntonioPC94/PPS-23-24/blob/1dba84d1d1a13a71a285c53a5137932d9cacd634/Pr%C3%A1cticas/img/img24.png" alt="img29" width="25%"/> <img src="https://github.com/AntonioPC94/PPS-23-24/blob/1dba84d1d1a13a71a285c53a5137932d9cacd634/Pr%C3%A1cticas/img/img25.png" alt="Descripción imagen 3" width="25%"/>
+<img src="https://github.com/AntonioPC94/PPS-23-24/blob/1dba84d1d1a13a71a285c53a5137932d9cacd634/Pr%C3%A1cticas/img/img23.png" alt="img28" alt="Descripción imagen 1" width="30%"/> <img src="https://github.com/AntonioPC94/PPS-23-24/blob/1dba84d1d1a13a71a285c53a5137932d9cacd634/Pr%C3%A1cticas/img/img24.png" alt="img29" width="30%"/> <img src="https://github.com/AntonioPC94/PPS-23-24/blob/1dba84d1d1a13a71a285c53a5137932d9cacd634/Pr%C3%A1cticas/img/img25.png" alt="Descripción imagen 3" width="30%"/>
 </p>
 
 
