@@ -86,11 +86,9 @@ Para ello, realizaremos un "docker inspect" sobre cada uno de los contenedores y
 
 Ahora que conocemos las direcciones IP de ambos contenedores, para ello ejecutaremos el comando "ping" desde uno de los contenedores. En nuestro caso, lo vamos a hacer de Kali Linux a DVWA.
 
-- Abrimos una shell interactiva en nuestro contenedor Kali Linux:
+- Abrimos la ventana que teníamos con la shell interactiva en Kali Linux.
 
-<p align="left">
-  <img src="https://github.com/AntonioPC94/PPS-23-24/blob/a97ff15fa56ecb7bdac4cd034e8e38cfae4dd548/Pr%C3%A1cticas/img/img33.png"/>
-</p>
+- Realizamos un "ping" a la máquina DVWA.
 
 - 
 
