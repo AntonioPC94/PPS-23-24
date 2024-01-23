@@ -42,4 +42,9 @@ Una vez instalada, desplegaremos la aplicación sobre el puesto 80 de nuestra m�
   <img src="https://github.com/AntonioPC94/PPS-23-24/blob/ae0dacfa09c706ee7f16f883ab76b16644e5f20e/Pr%C3%A1cticas/img/img27.png"/>
 </p>
 
+Ahora si nos vamos al navegador de nuestra máquina anfitriona y colocamos la siguiente URL, nos debería de aparecer la aplicación de DVWA desplegada:
+
+<p align="left">
+  <img src="https://github.com/AntonioPC94/PPS-23-24/blob/99a3ac623db6bcef0b54e639332de9194c666aa0/Pr%C3%A1cticas/img/img28.png"/>
+</p>
 
