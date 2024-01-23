@@ -48,10 +48,39 @@ Ahora si nos vamos al navegador de nuestra máquina anfitriona y colocamos la si
   <img src="https://github.com/AntonioPC94/PPS-23-24/blob/4e24cdebbd22317570263fcfd69fe00bce2e1e2b/Pr%C3%A1cticas/img/img28.png"/>
 </p>
 
-# Creación y configuración de red en Docker
+# Creación y configuración de una red en Docker
 
 Para que las dos máquinas anteriores puedan comunicarse, es conveniente que estén en la misma red. Para ello, vamos a crear una red en Docker y conectaremos ambos contenedores a ella.
 
 <p align="left">
   <img src="https://github.com/AntonioPC94/PPS-23-24/blob/a0ee3d97aa76e493123ce432f3149002fe8bdbfb/Pr%C3%A1cticas/img/img29.png"/>
 </p>
+
+# Comprobando la conexión
+
+Ahora para comprobar que ambas máquinas se ven, vamos a averiguar qué dirección IP tienen cada uno de los contenedores dentro de la red que acabamos de crear.
+
+Para ello, realizaremos un "docker inspect" sobre cada uno de los contenedores y redireccionaremos la salida a un fichero de texto para que nos sea más fácil localizar la dirección IP.
+
+## Resultados
+
+### Dirección IP Kali
+
+<p align="left">
+  <img src="https://github.com/AntonioPC94/PPS-23-24/blob/a97ff15fa56ecb7bdac4cd034e8e38cfae4dd548/Pr%C3%A1cticas/img/img30.png"/>
+</p>
+
+<p align="left">
+  <img src="https://github.com/AntonioPC94/PPS-23-24/blob/a97ff15fa56ecb7bdac4cd034e8e38cfae4dd548/Pr%C3%A1cticas/img/img31.png"/>
+</p>
+
+### Dirección IP DVWA
+
+<p align="left">
+  <img src="https://github.com/AntonioPC94/PPS-23-24/blob/a97ff15fa56ecb7bdac4cd034e8e38cfae4dd548/Pr%C3%A1cticas/img/img32.png"/>
+</p>
+
+<p align="left">
+  <img src="https://github.com/AntonioPC94/PPS-23-24/blob/a97ff15fa56ecb7bdac4cd034e8e38cfae4dd548/Pr%C3%A1cticas/img/img33.png"/>
+</p>
+
