@@ -16,7 +16,7 @@ Lo primero que haremos, será decargar la imagen oficial de Kali Linux de Docker
   <img src="https://github.com/AntonioPC94/PPS-23-24/blob/b80d66065fd392c13657a677be156089f30e4010/Pr%C3%A1cticas/img/img21.png"/>
 </p>
 
-Una vez instalado, accedemos al contenedor utilizando el siguiente comando:
+Una vez instalada, accedemos al contenedor utilizando el siguiente comando:
 
 <p align="center">
   <img src="https://github.com/AntonioPC94/PPS-23-24/blob/b80d66065fd392c13657a677be156089f30e4010/Pr%C3%A1cticas/img/img22.png"/>
