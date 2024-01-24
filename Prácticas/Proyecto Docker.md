@@ -36,7 +36,7 @@ Lo primero que haremos, será descargar la imagen oficial de DVWA de Docker Hub.
   <img src="https://github.com/AntonioPC94/PPS-23-24/blob/ae0dacfa09c706ee7f16f883ab76b16644e5f20e/Pr%C3%A1cticas/img/img26.png"/>
 </p>
 
-Una vez instalada, desplegaremos la aplicación sobre el puesto 80 de nuestra máquina anfitriona:
+Una vez instalada, desplegaremos la aplicación sobre el puerto 80 de nuestra máquina anfitriona para comprobar que funciona:
 
 <p align="left">
   <img src="https://github.com/AntonioPC94/PPS-23-24/blob/ae0dacfa09c706ee7f16f883ab76b16644e5f20e/Pr%C3%A1cticas/img/img27.png"/>
