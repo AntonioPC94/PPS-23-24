@@ -60,7 +60,7 @@ Para que las dos máquinas anteriores puedan comunicarse, es conveniente que est
 
 Ahora para comprobar que ambas máquinas se ven, vamos a averiguar qué dirección IP tienen cada uno de los contenedores dentro de la red que acabamos de crear.
 
-Para ello, realizaremos un "docker inspect" sobre cada uno de los contenedores y redireccionaremos la salida a un fichero de texto para que nos sea más fácil localizar la dirección IP.
+Para ello, realizaremos un "docker inspect" sobre cada uno de los contenedores y redireccionaremos la salida a un fichero de texto para que nos sea más fácil localizar la dirección IP de cada uno de ellos.
 
 ## Dirección IP Kali
 
