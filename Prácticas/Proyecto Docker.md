@@ -90,5 +90,7 @@ Ahora que conocemos las direcciones IP de ambos contenedores, ejecutaremos el co
 
 - Realizamos un "ping" a la máquina DVWA.
 
-**(CONTINUAR)**
+<p align="left">
+  <img src="https://github.com/AntonioPC94/PPS-23-24/blob/a97ff15fa56ecb7bdac4cd034e8e38cfae4dd548/Pr%C3%A1cticas/img/img34.png"/>
+</p>
 
