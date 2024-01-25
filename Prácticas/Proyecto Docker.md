@@ -135,7 +135,7 @@ Para ello, tendremos que irnos a BurpSuite y seguir los siguientes pasos:
 - A continuación, le daremos a "Select file" y le pondremos un nombre personalizado al certificado que vamos a exportar.
 
 <p align="center">
-<img src="https://github.com/AntonioPC94/PPS-23-24/blob/bcb606717b85a3726be5ee021be34bf4bcc28138/Pr%C3%A1cticas/img/img39.png" alt="img28" alt="Descripción imagen 1" width="35%"/> <img src="https://github.com/AntonioPC94/PPS-23-24/blob/bcb606717b85a3726be5ee021be34bf4bcc28138/Pr%C3%A1cticas/img/img40.png" alt="img29" width="30%"/>
+<img src="https://github.com/AntonioPC94/PPS-23-24/blob/bcb606717b85a3726be5ee021be34bf4bcc28138/Pr%C3%A1cticas/img/img39.png" alt="img28" alt="Descripción imagen 1" width="35%"/> <img src="https://github.com/AntonioPC94/PPS-23-24/blob/bcb606717b85a3726be5ee021be34bf4bcc28138/Pr%C3%A1cticas/img/img40.png" alt="img29" width="20%"/>
 </p>
 
 -  Una vez exportados, nos iremos al directorio donde lo hayamos guardado para ver que este se ha creado correctamente.
