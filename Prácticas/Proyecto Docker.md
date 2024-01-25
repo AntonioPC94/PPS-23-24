@@ -98,7 +98,7 @@ Ahora que conocemos las direcciones IP de ambos contenedores, ejecutaremos el co
 
 Como el objetivo de este proyecto es que nuestra máquina capte toda la comunicación que haya entre la máquina Kali y la DVWA, vamos a instalar BurpSuite en nuestra máquina anfitriona para utilizarla de proxy.
 
-Una vez hayamos instalado BurpSuite, nos iremos a nuestro Docker Windows y nos dirigiremos al siguiente sitio:
+Una vez lo hayamos instalado, nos iremos a nuestro Docker Windows y nos dirigiremos al siguiente sitio:
 
 Configuración --> Resources --> Proxies
 
@@ -111,6 +111,10 @@ En este apartado, configuraremos el proxy de Burp Suite para que todo el tráfic
 Nota: Es importante que pulsemos en "Apply & Restart" para aplicar los cambios.
 
 A continuación, instalaremos el certificado de BurpSuite en Kali para las peticiones HTTPS, ya que sino, cuando tratemos con webs que usen dicho protocolo, saldrá que estamos usando un certificado inseguro.
+
+Para ello, tendremos que seguir los siguientes pasos:
+
+- 
 
 
 
