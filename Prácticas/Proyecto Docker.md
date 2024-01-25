@@ -156,7 +156,7 @@ Para ello, tendremos que irnos a BurpSuite y seguir los siguientes pasos:
   <img src="https://github.com/AntonioPC94/PPS-23-24/blob/794c3f52abab06273bf11cc48642a0bf014f4a03/Pr%C3%A1cticas/img/img43.png"/>
 </p>
 
-- Ahora nos iremos a la sesión interactiva de Kali y entraremos dentro de la carpeta "root". Una vez dentro, convertiremos el certifcado ".der" en una clave pública, para ello haremos uso de "openssl":
+- Ahora nos iremos a la sesión interactiva que tenemos con Kali y entraremos dentro de la carpeta "root". Una vez dentro, convertiremos el certifcado ".der" en una clave pública, para ello haremos uso de "openssl":
 
 <p align="left">
   <img src="https://github.com/AntonioPC94/PPS-23-24/blob/794c3f52abab06273bf11cc48642a0bf014f4a03/Pr%C3%A1cticas/img/img44.png"/>
