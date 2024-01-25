@@ -98,7 +98,7 @@ Ahora que conocemos las direcciones IP de ambos contenedores, ejecutaremos el co
 
 Como el objetivo de este proyecto es que nuestra máquina capte toda la comunicación que haya entre la máquina Kali y la DVWA, vamos a instalar BurpSuite en nuestra máquina anfitriona para utilizarla de proxy.
 
-Una vez lo hayamos instalado, nos iremos a nuestro Docker Windows y nos dirigiremos al siguiente sitio:
+Una vez lo hayamos instalado, nos iremos a nuestro Docker Desktop y nos dirigiremos al siguiente sitio:
 
 Configuración --> Resources --> Proxies
 
@@ -144,9 +144,52 @@ Para ello, tendremos que irnos a BurpSuite y seguir los siguientes pasos:
   <img src="https://github.com/AntonioPC94/PPS-23-24/blob/bcb606717b85a3726be5ee021be34bf4bcc28138/Pr%C3%A1cticas/img/img41.png"/>
 </p>
 
-- 
+- Ahora la idea es moverlo al contenedor de Kali, para hacerlo podemos hacer uso del propio Docker Desktop. Para ello, nos iremos al apartado "Containers", buscaremos el contenedor de Kali, y por último, le daremos al apartado "Files" para poder ver el sistema de archivos de dicho sistema.
+
+<p align="left">
+  <img src=""/>
+</p>
+
+- A continuación, arrastraremos el certificado a la carpeta "root" del sistema Kali.
+
+<p align="left">
+  <img src=""/>
+</p>
+
+- Ahora nos iremos a la sesión interactiva de Kali y entraremos dentro de la carpeta "root". Una vez dentro, convertiremos el certifcado ".der" en una clave pública, para ello haremos uso de "openssl":
+
+<p align="left">
+  <img src=""/>
+</p>
+
+- Bien, ahora que tenemos la clave pública, la moveremos al directorio "/usr/local/share/ca-certificates/.
+
+<p align="left">
+  <img src=""/>
+</p>
+
+- Por último, actualizaremos los certificados con el siguiente comando.
+
+<p align="left">
+  <img src=""/>
+</p>
+
+Como se observa en la imagen anterior, un nuevo certificado ha sido añadido de manera exitosa.
+
+# Captura de peticiones con BurpSuite
+
+Ahora nos iremos a BurpSuite, concretamente al apartado "Proxy" y "HTTP History" y realizaremos dos peticiones distintas desde la sesión interactiva que tenemos abierta de Kali.
+
+<p align="left">
+  <img src=""/>
+</p>
 
 
+## Petición HTTP
+
+
+
+## Petición HTTPS
 
 
 
