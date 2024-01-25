@@ -105,18 +105,46 @@ Configuración --> Resources --> Proxies
 En este apartado, configuraremos el proxy de Burp Suite para que todo el tráfico pase por él:
 
 <p align="left">
-  <img src=""/>
+  <img src="https://github.com/AntonioPC94/PPS-23-24/blob/bcb606717b85a3726be5ee021be34bf4bcc28138/Pr%C3%A1cticas/img/img35.png"/>
 </p>
 
 Nota: Es importante que pulsemos en "Apply & Restart" para aplicar los cambios.
 
 A continuación, instalaremos el certificado de BurpSuite en Kali para las peticiones HTTPS, ya que sino, cuando tratemos con webs que usen dicho protocolo, saldrá que estamos usando un certificado inseguro.
 
-Para ello, tendremos que seguir los siguientes pasos:
+Para ello, tendremos que irnos a BurpSuite y seguir los siguientes pasos:
+
+- En el panel principal, nos vamos a "Settings".
+
+<p align="left">
+  <img src="https://github.com/AntonioPC94/PPS-23-24/blob/bcb606717b85a3726be5ee021be34bf4bcc28138/Pr%C3%A1cticas/img/img36.png"/>
+</p>
+
+- En la siguiente ventana que nos sale, le daremos a "Import/export CA certificate".
+
+<p align="left">
+  <img src="https://github.com/AntonioPC94/PPS-23-24/blob/bcb606717b85a3726be5ee021be34bf4bcc28138/Pr%C3%A1cticas/img/img37.png"/>
+</p>
+
+- Ahora le daremos a la opción "Export certificate in DER format".
+
+<p align="left">
+  <img src="https://github.com/AntonioPC94/PPS-23-24/blob/bcb606717b85a3726be5ee021be34bf4bcc28138/Pr%C3%A1cticas/img/img38.png"/>
+</p>
+
+- A continuación, le daremos a "Select file" y le pondremos un nombre personalizado al certificado que vamos a exportar.
+
+<p align="center">
+<img src="https://github.com/AntonioPC94/PPS-23-24/blob/bcb606717b85a3726be5ee021be34bf4bcc28138/Pr%C3%A1cticas/img/img39.png" alt="img28" alt="Descripción imagen 1" width="35%"/> <img src="https://github.com/AntonioPC94/PPS-23-24/blob/bcb606717b85a3726be5ee021be34bf4bcc28138/Pr%C3%A1cticas/img/img40.png" alt="img29" width="30%"/>
+</p>
+
+-  Una vez exportados, nos iremos al directorio donde lo hayamos guardado para ver que este se ha creado correctamente.
+
+<p align="left">
+  <img src="https://github.com/AntonioPC94/PPS-23-24/blob/bcb606717b85a3726be5ee021be34bf4bcc28138/Pr%C3%A1cticas/img/img41.png"/>
+</p>
 
 - 
-
-
 
 
 
