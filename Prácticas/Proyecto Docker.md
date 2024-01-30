@@ -207,7 +207,7 @@ Ahora nos iremos a BurpSuite, concretamente al apartado "Proxy" y "HTTP History"
 
 Para realizar las peticiones tanto por HTTP, como por HTTPS, tendremos que indicarle a Kali Linux en el comando "curl" por qué proxy tiene que pasar para poder realizar dichas peticiones (Tanto peticiones a páginas locales, como a páginas de Internet). Evidentemente, le diremos que el proxy es nuestra máquina anfitriona. Dependiendo a qué tipo de web le queramos realizar una petición, utilizaremos un comando u otro, pero ambos son muy parecidos.
 
-### Explicación comandos
+### Comandos
 
 - Comando primera petición: curl -v -x http://(MI IP):8080 http://127.0.0.1:8080/login.php
 - Comando segunda petición: curl -v -x http://(MI IP):8080 http://www.edu4java.com
