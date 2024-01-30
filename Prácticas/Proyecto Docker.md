@@ -209,8 +209,8 @@ Para realizar las peticiones tanto por HTTP, como por HTTPS, tendremos que indic
 
 ### Comandos
 
-- Comando primera petición: curl -v -x http://(MI IP):8080 http://127.0.0.1:8080/login.php
-- Comando segunda petición: curl -v -x http://(MI IP):8080 http://www.edu4java.com
+- Comando primera petición: curl -v -x http://(MI IP):8080 http://127.0.0.1:8080/login.php **(Página web DVWA)**
+- Comando segunda petición: curl -v -x http://(MI IP):8080 http://www.edu4java.com **(Página web de Internet)**
 
 <p align="left">
   <img src="https://github.com/AntonioPC94/PPS-23-24/blob/36e6e35e19426cc60460585913296e4ba9ed7f83/Pr%C3%A1cticas/img/img50.png"/>
