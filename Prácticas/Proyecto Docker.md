@@ -185,13 +185,13 @@ Ahora nos iremos a BurpSuite, concretamente al apartado "Proxy" y "HTTP History"
 </p>
 
 
-## Petición HTTP
+## Peticiones HTTP
 
 <p align="left">
   <img src=""/>
 </p>
 
-## Petición HTTPS
+## Peticiones HTTPS
 
 <p align="left">
   <img src="https://github.com/AntonioPC94/PPS-23-24/blob/e8fe73986227279af92d69975d562d469de1c356/Pr%C3%A1cticas/img/img48.png"/>
