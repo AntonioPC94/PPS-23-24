@@ -187,6 +187,8 @@ Ahora nos iremos a BurpSuite, concretamente al apartado "Proxy" y "HTTP History"
 
 ## Peticiones HTTP
 
+
+
 <p align="left">
   <img src=""/>
 </p>
