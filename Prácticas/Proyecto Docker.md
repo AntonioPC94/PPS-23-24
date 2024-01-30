@@ -100,7 +100,7 @@ Ahora que conocemos las direcciones IP de ambos contenedores, ejecutaremos el co
 
 # Tunelizar el tráfico de Kali Linux a través de BurpSuite
 
-Como el objetivo de este proyecto es que nuestra máquina capte toda la comunicación que haya entre la máquina Kali y la DVWA, vamos a instalar BurpSuite en nuestra máquina anfitriona para utilizarla de proxy.
+Como el objetivo de este proyecto es que nuestra máquina capte toda la comunicación que haya entre la máquina Kali, Internet y la máquina DVWA, vamos a instalar BurpSuite en nuestra máquina anfitriona para utilizarla de proxy.
 
 Una vez lo hayamos instalado, lo abriremos y lo configuraremos para que nuestra máquina anfitriona haga de proxy.
 
