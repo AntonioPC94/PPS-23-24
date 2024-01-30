@@ -98,17 +98,29 @@ Ahora que conocemos las direcciones IP de ambos contenedores, ejecutaremos el co
 
 Como el objetivo de este proyecto es que nuestra máquina capte toda la comunicación que haya entre la máquina Kali y la DVWA, vamos a instalar BurpSuite en nuestra máquina anfitriona para utilizarla de proxy.
 
-Una vez lo hayamos instalado, nos iremos a nuestro Docker Desktop y nos dirigiremos al siguiente sitio:
+Una vez lo hayamos instalado, lo abriremos y lo configuraremos para que nuestra máquina anfitriona haga de proxy.
 
-Configuración --> Resources --> Proxies
+Proxy --> Proxy Settings
 
-En este apartado, configuraremos el proxy de Burp Suite para que todo el tráfico pase por él:
+Ahora modificaremos los siguientes parámetros:
+
+- Proxy Listeners: Aquí indicaremos que el proxy va a ser nuestra máquina anfitriona, así que escribiremos la dirección IP de nuestra máquina y el puerto por el que escuchará será el 8080.
 
 <p align="left">
-  <img src="https://github.com/AntonioPC94/PPS-23-24/blob/bcb606717b85a3726be5ee021be34bf4bcc28138/Pr%C3%A1cticas/img/img35.png"/>
+  <img src=""/>
 </p>
 
-Nota: Es importante que pulsemos en "Apply & Restart" para aplicar los cambios.
+- Request interception rules: Aquí marcaremos la segunda opción, la cual nos permitirá controlar las solicitudes HTTP que se detengan, pudiendo así visualizarlas y editarlas en el apartado "Intercept".
+
+<p align="left">
+  <img src=""/>
+</p>
+
+- Miscellaneous: Aquí marcaremos las dos primeras opciones, para permitirle a BurpSuit usar HTTP 1.0 en las solicitudes realizadas al servidor y en las respuestas emitidas al cliente.
+
+<p align="left">
+  <img src=""/>
+</p>
 
 A continuación, instalaremos el certificado de BurpSuite en Kali para las peticiones HTTPS, ya que sino, cuando tratemos con webs que usen dicho protocolo, saldrá que estamos usando un certificado inseguro.
 
@@ -123,7 +135,7 @@ Para ello, tendremos que irnos a BurpSuite y seguir los siguientes pasos:
 - En la siguiente ventana que nos sale, le daremos a "Import/export CA certificate".
 
 <p align="left">
-  <img src="https://github.com/AntonioPC94/PPS-23-24/blob/bcb606717b85a3726be5ee021be34bf4bcc28138/Pr%C3%A1cticas/img/img37.png"/>
+  <img src=""/>
 </p>
 
 - Ahora le daremos a la opción "Export certificate in DER format".
