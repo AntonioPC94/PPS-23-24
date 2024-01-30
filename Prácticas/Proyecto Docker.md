@@ -178,7 +178,7 @@ Como se observa en la imagen anterior, un nuevo certificado ha sido añadido de 
 
 # Captura de peticiones con BurpSuite
 
-Ahora nos iremos a BurpSuite, concretamente al apartado "Proxy" y "HTTP History" y realizaremos dos peticiones distintas desde la sesión interactiva que tenemos abierta de Kali.
+Ahora nos iremos a BurpSuite, concretamente al apartado "Proxy" y "HTTP History" y realizaremos dos peticiones distintas con "curl" desde la sesión interactiva que tenemos abierta de Kali.
 
 <p align="left">
   <img src="https://github.com/AntonioPC94/PPS-23-24/blob/794c3f52abab06273bf11cc48642a0bf014f4a03/Pr%C3%A1cticas/img/img47.png"/>
