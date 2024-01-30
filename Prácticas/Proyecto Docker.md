@@ -39,13 +39,13 @@ Lo primero que haremos, será descargar la imagen oficial de DVWA de Docker Hub.
 Una vez instalada, desplegaremos la aplicación sobre el puerto 80 de nuestra máquina anfitriona para comprobar que funciona:
 
 <p align="left">
-  <img src="https://github.com/AntonioPC94/PPS-23-24/blob/ae0dacfa09c706ee7f16f883ab76b16644e5f20e/Pr%C3%A1cticas/img/img27.png"/>
+  <img src="https://github.com/AntonioPC94/PPS-23-24/blob/c0d19ba2ee07452fa2b4adde4d870781d84b4b86/Pr%C3%A1cticas/img/img27.png"/>
 </p>
 
 Ahora si nos vamos al navegador de nuestra máquina anfitriona y colocamos la siguiente URL, nos debería de aparecer la aplicación de DVWA desplegada:
 
 <p align="left">
-  <img src="https://github.com/AntonioPC94/PPS-23-24/blob/4e24cdebbd22317570263fcfd69fe00bce2e1e2b/Pr%C3%A1cticas/img/img28.png"/>
+  <img src="https://github.com/AntonioPC94/PPS-23-24/blob/c0d19ba2ee07452fa2b4adde4d870781d84b4b86/Pr%C3%A1cticas/img/img28.png"/>
 </p>
 
 # Creación y configuración de una red en Docker
