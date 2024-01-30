@@ -28,6 +28,8 @@ Ahora que estamos dentro, actualizaremos los repositorios de la máquina e insta
 <img src="https://github.com/AntonioPC94/PPS-23-24/blob/1dba84d1d1a13a71a285c53a5137932d9cacd634/Pr%C3%A1cticas/img/img23.png" alt="img28" alt="Descripción imagen 1" width="35%"/> <img src="https://github.com/AntonioPC94/PPS-23-24/blob/1dba84d1d1a13a71a285c53a5137932d9cacd634/Pr%C3%A1cticas/img/img24.png" alt="img29" width="30%"/> <img src="https://github.com/AntonioPC94/PPS-23-24/blob/1dba84d1d1a13a71a285c53a5137932d9cacd634/Pr%C3%A1cticas/img/img25.png" alt="Descripción imagen 3" width="30%"/>
 </p>
 
+Nota: Es recomendable crear una imagen de esta máquina configurada ya que es muy probable que cometamos errores más adelante.
+
 # Instalación DVWA
 
 Lo primero que haremos, será descargar la imagen oficial de DVWA de Docker Hub.
@@ -36,7 +38,7 @@ Lo primero que haremos, será descargar la imagen oficial de DVWA de Docker Hub.
   <img src="https://github.com/AntonioPC94/PPS-23-24/blob/ae0dacfa09c706ee7f16f883ab76b16644e5f20e/Pr%C3%A1cticas/img/img26.png"/>
 </p>
 
-Una vez instalada, desplegaremos la aplicación sobre el puerto 80 de nuestra máquina anfitriona para comprobar que funciona:
+Una vez instalada, desplegaremos la aplicación sobre el puerto 8080 y la añadiremos a la red de Docker que crearemos en el siguiente punto:
 
 <p align="left">
   <img src="https://github.com/AntonioPC94/PPS-23-24/blob/c0d19ba2ee07452fa2b4adde4d870781d84b4b86/Pr%C3%A1cticas/img/img27.png"/>
@@ -52,13 +54,15 @@ Ahora si nos vamos al navegador de nuestra máquina anfitriona y colocamos la si
 
 Para que las dos máquinas anteriores puedan comunicarse, es conveniente que estén en la misma red. Para ello, vamos a crear una red en Docker y conectaremos ambos contenedores a ella.
 
+Nota: Aunque previamente vimos que conectamos la máquina de DVWA a la red que acabamos de crear, no lo hicimos hasta que esta red fue creada.
+
 <p align="left">
-  <img src="https://github.com/AntonioPC94/PPS-23-24/blob/a0ee3d97aa76e493123ce432f3149002fe8bdbfb/Pr%C3%A1cticas/img/img29.png"/>
+  <img src="https://github.com/AntonioPC94/PPS-23-24/blob/34f065d9717ddbd13270c5ccab6e2595a7c7c03f/Pr%C3%A1cticas/img/img29.png"/>
 </p>
 
 # Comprobando la conexión
 
-Ahora para comprobar que ambas máquinas se ven, vamos a averiguar qué dirección IP tienen cada uno de los contenedores dentro de la red que acabamos de crear.
+Ahora para comprobar que ambas máquinas se ven, vamos a averiguar qué dirección IP tienen cada uno de los contenedores que hemos metido dentro de la nueva red.
 
 Para ello, realizaremos un "docker inspect" sobre cada uno de los contenedores y redireccionaremos la salida a un fichero de texto para que nos sea más fácil localizar la dirección IP de cada uno de ellos.
 
@@ -104,22 +108,22 @@ Proxy --> Proxy Settings
 
 Ahora modificaremos los siguientes parámetros:
 
-- Proxy Listeners: Aquí indicaremos que el proxy va a ser nuestra máquina anfitriona, así que escribiremos la dirección IP de nuestra máquina y el puerto por el que escuchará será el 8080.
+- Proxy Listeners: Aquí indicaremos que el proxy va a ser nuestra máquina anfitriona, así que escribiremos la dirección IP de nuestra máquina y el puerto por el que escuchará, que será el 8080.
 
 <p align="left">
-  <img src=""/>
+  <img src="https://github.com/AntonioPC94/PPS-23-24/blob/eca6d3c62a473499272d854786776c11258f502c/Pr%C3%A1cticas/img/img35.png"/>
 </p>
 
 - Request interception rules: Aquí marcaremos la segunda opción, la cual nos permitirá controlar las solicitudes HTTP que se detengan, pudiendo así visualizarlas y editarlas en el apartado "Intercept".
 
 <p align="left">
-  <img src=""/>
+  <img src="https://github.com/AntonioPC94/PPS-23-24/blob/c7192bd878d0d8e236c568d2f8237e25553e0dda/Pr%C3%A1cticas/img/img37.png"/>
 </p>
 
 - Miscellaneous: Aquí marcaremos las dos primeras opciones, para permitirle a BurpSuit usar HTTP 1.0 en las solicitudes realizadas al servidor y en las respuestas emitidas al cliente.
 
 <p align="left">
-  <img src=""/>
+  <img src="https://github.com/AntonioPC94/PPS-23-24/blob/d6f4df1d354ae6f40aa30b424e1b8c8b80c480d4/Pr%C3%A1cticas/img/img48.png"/>
 </p>
 
 A continuación, instalaremos el certificado de BurpSuite en Kali para las peticiones HTTPS, ya que sino, cuando tratemos con webs que usen dicho protocolo, saldrá que estamos usando un certificado inseguro.
@@ -135,7 +139,7 @@ Para ello, tendremos que irnos a BurpSuite y seguir los siguientes pasos:
 - En la siguiente ventana que nos sale, le daremos a "Import/export CA certificate".
 
 <p align="left">
-  <img src=""/>
+  <img src="https://github.com/AntonioPC94/PPS-23-24/blob/444945805ce97985c2308ee693f2e46a5a68cf10/Pr%C3%A1cticas/img/img49.png"/>
 </p>
 
 - Ahora le daremos a la opción "Export certificate in DER format".
@@ -190,24 +194,31 @@ Como se observa en la imagen anterior, un nuevo certificado ha sido añadido de 
 
 # Captura de peticiones con BurpSuite
 
-Ahora nos iremos a BurpSuite, concretamente al apartado "Proxy" y "HTTP History" y realizaremos dos peticiones distintas con "curl" desde la sesión interactiva que tenemos abierta de Kali.
+Ahora nos iremos a BurpSuite, concretamente al apartado "Proxy" y "HTTP History" y realizaremos dos peticiones distintas con "curl" desde la sesión interactiva que tenemos abierta del contenedor de Kali.
 
 <p align="left">
   <img src="https://github.com/AntonioPC94/PPS-23-24/blob/794c3f52abab06273bf11cc48642a0bf014f4a03/Pr%C3%A1cticas/img/img47.png"/>
 </p>
 
 
-## Peticiones HTTP
+## Peticiones HTTP y HTTPS
 
+Para realizar las peticiones tanto por HTTP, como por HTTPS, tendremos que indicarle a Kali Linux en el comando "curl" por qué proxy tiene que pasar para poder realizar dichas peticiones (Tanto peticiones a páginas locales, como a páginas de Internet). Evidentemente, le diremos que el proxy es nuestra máquina anfitriona. Dependiendo a qué tipo de web le queramos realizar una petición, utilizaremos un comando u otro, pero ambos son muy parecidos.
 
+### Explicación comandos
+
+- Comando primera petición: curl -v -x http://(MI IP):8080 http://127.0.0.1:8080/login.php
+- Comando segunda petición: curl -v -x http://(MI IP):8080 http://www.edu4java.com
 
 <p align="left">
-  <img src=""/>
+  <img src="https://github.com/AntonioPC94/PPS-23-24/blob/36e6e35e19426cc60460585913296e4ba9ed7f83/Pr%C3%A1cticas/img/img50.png"/>
 </p>
 
-## Peticiones HTTPS
+### Peticiones HTTPS
+
+- Comando primera y única petición: curl -v -x http://(MI IP):8080 https://www.google.es
 
 <p align="left">
-  <img src="https://github.com/AntonioPC94/PPS-23-24/blob/e8fe73986227279af92d69975d562d469de1c356/Pr%C3%A1cticas/img/img48.png"/>
+  <img src="https://github.com/AntonioPC94/PPS-23-24/blob/36e6e35e19426cc60460585913296e4ba9ed7f83/Pr%C3%A1cticas/img/img51.png"/>
 </p>
 
