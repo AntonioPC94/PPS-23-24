@@ -126,6 +126,8 @@ Ahora modificaremos los siguientes parámetros:
   <img src="https://github.com/AntonioPC94/PPS-23-24/blob/d6f4df1d354ae6f40aa30b424e1b8c8b80c480d4/Pr%C3%A1cticas/img/img48.png"/>
 </p>
 
+## Exportando e instalando el certificado de BurpSuite
+
 A continuación, instalaremos el certificado de BurpSuite en Kali para las peticiones HTTPS, ya que sino, cuando tratemos con webs que usen dicho protocolo, saldrá que estamos usando un certificado inseguro.
 
 Para ello, tendremos que irnos a BurpSuite y seguir los siguientes pasos:
