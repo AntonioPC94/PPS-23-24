@@ -18,7 +18,7 @@ Lo primero que haremos, será descargarnos los contenedores necesarios para pode
 
 ## Desplegando Jenkins
 
-![Jenkins&ZAP1]()
+![Jenkins&ZAP1](img/Jenkins&ZAP1.png)
 
 ## OWASP ZAP
 
@@ -26,7 +26,7 @@ El contenedor de ZAP se desplegará automáticamente cuando lancemos el pipeline
 
 ## Desplegando Juice Shop
 
-![Jenkins&ZAP2]()
+![Jenkins&ZAP2](img/Jenkins&ZAP2.png))
 
 ## Pipeline Jenkins
 
@@ -163,7 +163,7 @@ pipeline {
 
 ## Lanzamiento del pipeline
 
-![Jenkins&ZAP3]()
+![Jenkins&ZAP3](img/Jenkins&ZAP3.png))
 
 Como se observa en la imagen anterior, el pipeline que creamos anteriormente, se ha lanzado con éxito.
 
@@ -171,14 +171,14 @@ Como se observa en la imagen anterior, el pipeline que creamos anteriormente, se
 
 A continuación, nos iremos al WorkSpace de Jenkins y accederemos al enlace que nos viene.
 
-![Jenkins&ZAP4]()
+![Jenkins&ZAP4](img/Jenkins&ZAP4.png))
 
 Nos descargamos el "zip" que contiene el resultado del escaneo.
 
-![Jenkins&ZAP5]()
+![Jenkins&ZAP5](img/Jenkins&ZAP5.png))
 
 Visualizamos los resultados en el navegador.
 
-![Jenkins&ZAP6]()
+![Jenkins&ZAP6](img/Jenkins&ZAP6.png))
 
 
