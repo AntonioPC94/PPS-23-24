@@ -5,6 +5,8 @@
     - [OWASP ZAP](#owasp-zap)
     - [Desplegando Juice Shop](#desplegando-juice-shop)
     - [Pipeline Jenkins](#pipeline-jenkins)
+    - [Lanzamiento del pipeline](#lanzamiento-del-pipeline)
+    - [Comprobación de resultados](#comprobación-de-resultados)
 
 # Jenkins Ft. OWASP ZAP
 
